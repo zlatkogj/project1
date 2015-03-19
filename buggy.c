@@ -17,7 +17,9 @@ int i = 0;
 for (i=0;i<10;i++) {
 tmp = malloc(sizeof(*tmp));
 tmp->data = test_string;
-//strncpy(tmp->data,test_string,strlen(test_string));
+//tmp->data = test_string; 
+strncpy(tmp->data,test_string,strlen(test_string));
+>>>>>>> issue55
 tmp->next = head;
 head = tmp;
 }
